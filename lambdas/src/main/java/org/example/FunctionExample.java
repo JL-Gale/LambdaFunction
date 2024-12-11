@@ -14,10 +14,5 @@ public class FunctionExample {
         Function<Byte, String> function2 = (param) -> (param < 18) ? "Eres menor de edad" : "Ya estas viejo en tu casa ya lledes";
         System.out.println(function2.apply((byte)18));
 
-
-
-
-
-
     }
 }

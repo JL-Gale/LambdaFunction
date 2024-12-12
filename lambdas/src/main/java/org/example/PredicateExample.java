@@ -17,5 +17,6 @@ public class PredicateExample {
             return param.length() < 10;
         };
         System.out.println((predicate2.test("0123456789")) ? "Tiene menos de 10 caracteres" : "Tiene mas de 10 caracteres");
+
     }
 }

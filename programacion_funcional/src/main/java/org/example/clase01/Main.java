@@ -1,17 +1,14 @@
-package org.example;
+package org.example.clase01;
 
-import org.example.clase01.FakerUtils;
-import org.example.clase01.Persona;
 import org.example.clase01.comparators.ComparadorAlfabetico;
-import org.example.clase01.comparators.ComparatorByLengthName;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Hello, World!");
 
         List<Persona> listaPersona = generarPersona(100);

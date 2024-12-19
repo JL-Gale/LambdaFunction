@@ -14,7 +14,7 @@ public class CallableExample {
         };
 
         try {
-            callable.call();
+            System.out.println(callable.call());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -1,17 +1,28 @@
 package org.example.clase04;
 
+import java.util.function.Predicate;
+
 public class Main {
     public static void main(String[] args) {
-        ejecitoLambdaTipo1(() -> System.out.println("Hello world"));
-        ejecitoLambdaTipo2(a -> System.out.println(a), 15);
-        ejecitoLambdaTipo2(a -> System.out.println(a), Integer.MIN_VALUE);
-        ejecitoLambdaTipo3((a, b)-> System.out.println(a+b), 30, 15);
-        ejecitoLambdaTipo4(()->{
-            var a = 2;
-            var b = 3;
-            return a*b;
-        });
+//        ejecitoLambdaTipo1(() -> System.out.println("Hello world"));
+//        ejecitoLambdaTipo2(a -> System.out.println(a), 15);
+//        ejecitoLambdaTipo2(a -> System.out.println(a), Integer.MIN_VALUE);
+//        ejecitoLambdaTipo3((a, b)-> System.out.println(a+b), 30, 15);
+//        ejecitoLambdaTipo4(()->{
+//            var a = 2;
+//            var b = 3;
+//            return a*b;
+//        });
         ejecitoLambdaTipo5((a,b)->a+b, 17, 9);
+
+
+        Predicate<String> funcion = a-> (a.isEmpty() | a.isBlank());
+
+        System.out.println(funcion.test("") ? "No tienes datos" : "Tienes datos");
+        System.out.println(funcion.test(" ") ? "No tienes datos" : "Tienes datos");
+        System.out.println(funcion.test("Hola") ? "No tienes datos" : "Tienes datos");
+
+
     }
 
     static void ejecitoLambdaTipo5(IFuncional5 f, int a, int b) {

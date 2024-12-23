@@ -1,6 +1,7 @@
 package org.example.clase06;
 
 import javax.swing.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +27,34 @@ public class Main {
         };
 
         System.out.println(function.apply(""));
+
+        var sB = new StringBuilder().append("Hola putos");
+        System.out.println(sB);
+
+//        int numero = 1;
+//        var aux = 1;
+//        while (aux < 5){
+//            aux++;
+//            System.out.println(numero += aux);
+//        }
+//
+//        numero = 1;
+//        for (int i = 1; i < 5;) {
+//            i++;
+//            System.out.println(numero += i);
+//        }
+//
+//        System.out.println("Ingrese el numero de filas: ");
+//        Scanner sc = new Scanner(System.in);
+//        var numeroFilas = sc.nextInt();
+//
+//        for (int i = 1; i <= numeroFilas; i++) {
+//            var espaciosFilas = " ".repeat(numeroFilas-i);
+//            var asteriscos = "*".repeat(2*i-1);
+//            System.out.println(espaciosFilas.concat(asteriscos));
+//        }
+
+
     }
 
     //Una high orden functions es una funcion que recive funciones o que devuelve funciones.

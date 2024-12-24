@@ -20,7 +20,7 @@ public class Main {
         }
 
         System.out.println("***************");
-        //Programacion funcional con
+        //Programacion funcional con metodo de referencia.
         listaDeNombre.forEach(System.out::println);
 
         System.out.println("***************");

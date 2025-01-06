@@ -51,6 +51,7 @@ public class Main {
         System.out.println(list.get(1));
         System.out.println(list.get(22));
 
+        list.forEach(System.out::println);
         for (String s : list) {
             System.out.println(s);
         }

@@ -3,7 +3,6 @@ package org.example.clase12;
 import org.apache.commons.lang3.StringUtils;
 import org.example.clase06.Function;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
@@ -21,18 +20,18 @@ public class Main {
                     .toList();
         };
 
-       Function<String, Predicate<String>> test = (s) -> (n) -> 
-               n.contains(StringUtils.stripAccents(s).toLowerCase()) 
-                       | n.contains(StringUtils.stripAccents(s).toUpperCase());
-           
-       
-        Function<String, Predicate<String>> test2 = (s) -> { 
+       Function<String, Predicate<String>> test = (s) -> (n) ->
+               n.startsWith(StringUtils.stripAccents(s).toLowerCase())
+                       | n.startsWith(StringUtils.stripAccents(s).toUpperCase());
+
+
+        Function<String, Predicate<String>> test2 = (s) -> {
             Predicate<String> filtrar = (n) -> {
                 if (s.contains("Ñ") | s.contains("ñ")){
-                    return n.contains(s.toLowerCase()) 
+                    return n.contains(s.toLowerCase())
                             | n.contains(s.toUpperCase());
                 }
-                return n.contains(StringUtils.stripAccents(s).toLowerCase()) 
+                return n.contains(StringUtils.stripAccents(s).toLowerCase())
                         | n.contains(StringUtils.stripAccents(s).toUpperCase());};
             return filtrar;
         };

@@ -1,0 +1,27 @@
+package org.example.clase13;
+
+public class Persona {
+    private String name;
+
+    public Persona() {
+    }
+
+    public Persona(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+}

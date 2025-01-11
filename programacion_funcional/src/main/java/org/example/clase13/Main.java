@@ -39,17 +39,22 @@ public class Main {
         // 2. Referencia a metodos constructor
         String[] nombres = generar.apply(10).toArray(new String[0]);
 
-        List<Persona> list = Arrays.stream(nombres)
-                .map(s -> new Persona(s))
-                .toList();
-        System.out.println(list);
+//        List<Persona> list = Arrays.stream(nombres)
+//                .map(s -> new Persona(s))
+//                .toList();
+//        System.out.println(list);
 
         List<Persona> list2 = Arrays.stream(nombres)
                 .map(Persona::new)
                 .toList();
+        System.out.println(list2);
 
         // 3. Referencia a metodos de instancia
 
+        List<String> listaDeString = list2.stream()
+                .map(Persona::getName)
+                .toList();
+        System.out.println(listaDeString);
 
 //        List<String> list3 = new ArrayList<>();
 //        for (Persona persona : list) {
@@ -57,10 +62,14 @@ public class Main {
 //        }
 //        System.out.println(list3);
 
-        List<String> listaDeString = list2.stream()
-                .map(Persona::getName)
-                .toList();
-        System.out.println(listaDeString);
+
+//        List<String> listaDeString = list2.stream()
+//                .map(p -> {
+//                    return p.getName();
+//                })
+//                .toList();
+//        System.out.println(listaDeString);
+
 
     }
 

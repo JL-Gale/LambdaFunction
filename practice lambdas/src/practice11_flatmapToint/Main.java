@@ -1,4 +1,4 @@
-package practice11;
+package practice11_flatmapToint;
 
 import java.util.Arrays;
 import java.util.List;

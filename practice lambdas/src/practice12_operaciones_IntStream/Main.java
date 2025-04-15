@@ -1,4 +1,4 @@
-package practice12;
+package practice12_operaciones_IntStream;
 
 import java.util.*;
 import java.util.function.Predicate;

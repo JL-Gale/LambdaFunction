@@ -1,4 +1,4 @@
-package practice07;
+package practice07_filter_map;
 
 import java.util.List;
 

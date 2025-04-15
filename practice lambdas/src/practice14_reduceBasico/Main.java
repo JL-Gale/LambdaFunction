@@ -1,6 +1,5 @@
-package practice14;
+package practice14_reduceBasico;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.OptionalInt;
 

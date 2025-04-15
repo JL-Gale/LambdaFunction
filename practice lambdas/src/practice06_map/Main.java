@@ -1,4 +1,4 @@
-package practice06;
+package practice06_map;
 
 import java.util.Arrays;
 import java.util.List;

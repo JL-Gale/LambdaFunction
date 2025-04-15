@@ -1,4 +1,4 @@
-package practice10;
+package practice10_Metodos_de_Referencia;
 
 import java.util.Arrays;
 import java.util.List;
